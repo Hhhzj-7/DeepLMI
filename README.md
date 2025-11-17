@@ -4,17 +4,6 @@ DeepLMI: Deep Feature Mining with a Globally Enhanced Graph Convolutional Networ
 
 ---
 
-## Overview
-
-DeepLMI predicts potential lncRNA–miRNA interactions by combining:
-
-1. **Multi-scale lncRNA embedding** – parallel Doc2Vec pretraining and self-attention fusion.
-2. **Multi-source miRNA embedding** – integrates RNA-FM pretrained sequence representations and SPOT-RNA-2D structural contacts through GCN.
-3. **Global-Enhanced Graph Convolution Network (GE-GCN)** – models both local and global topological information via dual virtual nodes for lncRNA and miRNA.
-4. **Prediction module** – fuses biological and topological embeddings using an MLP to score interaction likelihood.
-
----
-
 ## Directory Structure
 
 ```
@@ -65,7 +54,7 @@ pip install -r requirements.txt
 
 Three main experimental setups are implemented:
 
-### 1. Standard Cross-Validation (Setting 1)
+### 1. Standard Cross-Validation
 
 Run:
 
@@ -75,7 +64,7 @@ python main.py
 
 * Outputs to `save/`
 
-### 2. Cold-Start Tests (Setting 2)
+### 2. Blind Tests
 
 Run:
 
@@ -86,7 +75,7 @@ python main_cold_start.py
 * Modes: blind lncRNA / blind miRNA / blind both
 * Outputs to `save_cold/`
 
-### 3. Independent Test (Setting 3)
+### 3. Independent Test
 
 Run:
 
