@@ -1,0 +1,8 @@
+2025-04-11 21:48:47,621 prediction INFO: Using 1 GPUS, GPU ID: 1
+2025-04-11 21:48:47,623 prediction INFO: Loaded configuration file pretrained/extract_embedding.yml
+2025-04-11 21:48:47,623 prediction INFO: Model File:none
+2025-04-11 21:48:47,623 prediction INFO: Batch Size:1
+2025-04-11 21:48:47,623 prediction INFO: Threshold:0.5
+2025-04-11 21:48:47,623 prediction INFO: Prediction Dataset: ./data/examples/merged_mirna.fasta
+2025-04-11 21:48:53,637 prediction.inference INFO: Enter inferencing for Custom set
+2025-04-11 21:49:12,600 prediction.inference INFO: Finish Prediction
