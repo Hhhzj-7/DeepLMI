@@ -49,6 +49,12 @@ pip install -r requirements.txt
 * **Independent dataset** → `dataset_in/`
 
 ---
+## Feature construction
+RNA sequence representations were obtained using RNA-FM. A pretrained RNA-FM model was applied to encode RNA sequences and generate nucleotide-level embeddings, where each nucleotide is represented by a 640-dimensional vector, resulting in an embedding matrix of size L × 640 (L denotes the RNA sequence length). Detailed instructions for installation and embedding extraction are available in the official RNA-FM repository: [RNA-FM](https://github.com/ml4bio/RNA-FM).
+
+In parallel, RNA secondary structure information was predicted using SPOT-RNA-2D. This method infers base-pairing relationships between nucleotides and produces a binary contact matrix of size L × L, where each element is either 0 or 1, indicating the presence or absence of a structural contact. The detailed usage and implementation of SPOT-RNA-2D can be found in its official documentation:[SPOT-RNA-2D](https://github.com/jaswindersingh2/SPOT-RNA-2D).
+
+---
 
 ## Experiments
 
